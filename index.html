@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Responsive Website</title>
+    <style>
+        /* Modern CSS Reset & Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Container to center and align layout */
+        div {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+        }
+
+        /* Typography Styling */
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #34495e;
+            font-size: 1.8rem;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+
+        h3 {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Anchor Link Styling */
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        /* Custom Horizontal Rule */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e0e0e0;
+            margin: 40px 0;
+        }
+
+        /* Marquee Styling Wrapper */
+        marquee {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px;
+            font-weight: 500;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        /* Inline Span Highlight */
+        span {
+            background-color: #e8f4fd;
+            color: #2980b9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* List Styling */
+        ul, ol {
+            background-color: #f8f9fa;
+            padding: 20px 40px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            border-left: 3px solid #bdc3c7;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Media Elements */
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-top: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        audio, video {
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 6px;
+            background-color: #000;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #fcfcfc;
+        }
+
+        /* Modern Form Elements Styling */
+        form {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 6px;
+            border: 1px solid #eaeaea;
+        }
+
+        form div {
+            /* Targeting divs inside the form specifically for control spacing */
+            max-width: 100%;
+            margin: 0 0 20px 0;
+            padding: 0;
+            background: transparent;
+            box-shadow: none;
+            border-radius: 0;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+
+        button[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            Breaking News: Welcome to our daily news portal! Stay tuned for more live updates throughout the day.
+        </marquee>
+
+        <h1>Daily News Portal</h1>
+        <h2>World News and Science Updates</h2>
+        <h3>Local Community Bulletin</h3>
+
+        <hr>
+
+        <p>
+            Scientists have made a major breakthrough in renewable energy research today. This discovery could change how we power major cities in the future. For more details on the global energy initiative, you can visit the <a href="https://www.w3schools.com" target="_blank">Global Science Council Website</a>.
+        </p>
+
+        <p>
+            The project coordinator stated during the press conference:<br>
+            "We are looking at a <span>completely sustainable</span> future."
+        </p>
+
+        <p>
+            The chemical breakdown requires mixing H<sub>2</sub>O with specific compounds at temperatures exceeding 100<sup>o</sup>C to initiate the reaction.
+        </p>
+
+        <p>Please review the following requirements for the seminar:</p>
+        <ul>
+            <li>All attendees <b>must register online</b> before arriving at the venue.</li>
+            <li>It is <strong>highly critical</strong> to bring a valid photo identification card.</li>
+            <li>Please <u>do not</u> bring outside food or drinks into the auditorium.</li>
+        </ul>
+
+        <p>Follow these steps to complete your registration:</p>
+        <ol>
+            <li>Fill out the subscription form at the bottom of this page.</li>
+            <li>Verify your profile information via the link sent <i>directly to your inbox</i>.</li>
+            <li>Download your entry pass and save it <em>on your mobile device</em>.</li>
+        </ol>
+
+        <hr>
+
+        <h2>Featured Photography</h2>
+        <p>A view of the research facility layout where the breakthrough occurred:</p>
+        <img src="https://picsum.photos/600/300" alt="Research Facility Gallery">
+
+        <hr>
+
+        <h2>Media Archive</h2>
+        
+        <h3>Audio Briefing</h3>
+        <p>Listen to the full interview with the lead scientist:</p>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video Report</h3>
+        <p>Watch the video broadcast covering the project presentation:</p>
+        <video controls width="600">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <hr>
+
+        <h2>Conference Schedule</h2>
+        <p>The timetable for the upcoming weekend panels:</p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Time Slot</th>
+                    <th>Session Topic</th>
+                    <th>Room Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 AM</td>
+                    <td>Opening Remarks</td>
+                    <td>Main Auditorium</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>Panel Discussion</td>
+                    <td>Hall A</td>
+                </tr>
+                <tr>
+                    <td>02:00 PM</td>
+                    <td>Interactive Workshop</td>
+                    <td>Laboratory 4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Newsletter Subscription</h2>
+        <p>Sign up to receive updates directly in your inbox:</p>
+        
+        <form action="#" method="POST">
+            <div>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <br>
+            <div>
+                <label for="subject">Subscription Plan:</label><br>
+                <select id="subject" name="subject">
+                    <option value="general">Daily Newsletter</option>
+                    <option value="support">Weekly Digest</option>
+                    <option value="feedback">Monthly Special Reports</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="message">Comments or Preferences:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Let us know what topics interest you..."></textarea>
+            </div>
+            <br>
+            <button type="submit">Submit Form</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
