@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,11 +84,11 @@
 
         // 3. DevTools Anti-Tamper Engine 
         // If DevTools opens, this creates an infinite loop that freezes the inspect view
-        setInterval(function() {
+        setInterval(function () {
             const startTime = +new Date();
             debugger; // When Devtools is open, execution pauses here
             const endTime = +new Date();
-            
+
             // If the time gap is too large, DevTools is running
             if (endTime - startTime > 100) {
                 // Instantly wipe the visible DOM or break the browser session
@@ -96,6 +97,7 @@
         }, 100);
     </script>
 </head>
+
 <body>
 
     <div class="main-container">
@@ -111,7 +113,9 @@
         <hr>
 
         <p>
-            Scientists have made a major breakthrough in renewable energy research today. This discovery could change how we power major cities in the future. For more details on the global energy initiative, you can visit the <a href="https://www.w3schools.com" target="_blank">Global Science Council Website</a>.
+            Scientists have made a major breakthrough in renewable energy research today. This discovery could change
+            how we power major cities in the future. For more details on the global energy initiative, you can visit the
+            <a href="https://www.w3schools.com" target="_blank">Global Science Council Website</a>.
         </p>
 
         <p>
@@ -120,7 +124,8 @@
         </p>
 
         <p>
-            The chemical breakdown requires mixing H<sub>2</sub>O with specific compounds at temperatures exceeding 100<sup>o</sup>C to initiate the reaction.
+            The chemical breakdown requires mixing H<sub>2</sub>O with specific compounds at temperatures exceeding
+            100<sup>o</sup>C to initiate the reaction.
         </p>
 
         <p>Please review the following requirements for the seminar:</p>
@@ -146,7 +151,7 @@
         <hr>
 
         <h2>Media Archive</h2>
-        
+
         <h3>Audio Briefing</h3>
         <p>Listen to the full interview with the lead scientist:</p>
         <audio controls>
@@ -157,7 +162,8 @@
         <h3>Video Report</h3>
         <p>Watch the video broadcast covering the project presentation:</p>
         <video controls width="600">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
@@ -165,38 +171,88 @@
 
         <h2>Conference Schedule</h2>
         <p>The timetable for the upcoming weekend panels:</p>
-        <table border="1">
+        <table border="5" cellpadding="12" cellspacing="3" width="100%" bgcolor="#fdfdfd">
+            <caption align="top"><b>
+                    <h3>OFFICIAL THREE-DAY CONFERENCE TRACK & SCHEDULE</h3>
+                </b></caption>
+
             <thead>
-                <tr>
-                    <th>Time Slot</th>
-                    <th>Session Topic</th>
-                    <th>Room Location</th>
+                <tr bgcolor="#2c3e50">
+                    <th rowspan="2" width="15%">
+                        <font color="#ffffff">Day</font>
+                    </th>
+                    <th rowspan="2" width="15%">
+                        <font color="#ffffff">Time Slot</font>
+                    </th>
+                    <th colspan="2" bgcolor="#34495e">
+                        <font color="#ffffff">Parallel Tracks</font>
+                    </th>
+                    <th rowspan="2" width="20%">
+                        <font color="#ffffff">Room Location</font>
+                    </th>
+                </tr>
+                <tr bgcolor="#34495e">
+                    <th width="25%">
+                        <font color="#ffffff">Track A: Science</font>
+                    </th>
+                    <th width="25%">
+                        <font color="#ffffff">Track B: Technology</font>
+                    </th>
                 </tr>
             </thead>
+
             <tbody>
-                <tr>
-                    <td>09:00 AM</td>
-                    <td>Opening Remarks</td>
+                <tr align="center">
+                    <td rowspan="3" bgcolor="#eaeded"><b>Day 1</b></td>
+                    <td>09:00 AM - 10:30 AM</td>
+                    <td colspan="2" bgcolor="#f4f6f7"><i>Opening Remarks & Keynote Key Address</i></td>
                     <td>Main Auditorium</td>
                 </tr>
-                <tr>
-                    <td>11:00 AM</td>
-                    <td>Panel Discussion</td>
+                <tr align="center">
+                    <td>11:00 AM - 12:30 PM</td>
+                    <td>Renewable Energy Systems</td>
+                    <td>Cloud Infrastructure</td>
                     <td>Hall A</td>
                 </tr>
-                <tr>
-                    <td>02:00 PM</td>
-                    <td>Interactive Workshop</td>
+                <tr align="center">
+                    <td>02:00 PM - 04:30 PM</td>
+                    <td>Chemical Reactions Workshop</td>
+                    <td>AI Machine Learning Lab</td>
                     <td>Laboratory 4</td>
                 </tr>
+
+                <tr align="center" bgcolor="#f9ebd2">
+                    <td colspan="5"><b>CATERED NETWORKING LUNCH BREAK (ALL TRACKS)</b></td>
+                </tr>
+
+                <tr align="center">
+                    <td rowspan="2" bgcolor="#eaeded"><b>Day 2</b></td>
+                    <td>10:00 AM - 12:00 PM</td>
+                    <td>Quantum Physics Basics</td>
+                    <td>Cybersecurity Best Practices</td>
+                    <td>Hall B</td>
+                </tr>
+                <tr align="center">
+                    <td>01:30 PM - 03:30 PM</td>
+                    <td colspan="2" bgcolor="#f4f6f7"><i>Interactive Combined Panel Discussion</i></td>
+                    <td>Main Auditorium</td>
+                </tr>
             </tbody>
+
+            <tfoot>
+                <tr bgcolor="#bdc3c7">
+                    <td colspan="2"><b>Total Event Run:</b></td>
+                    <td colspan="2">5 Technical Tracks Total</td>
+                    <td align="right"><b>3 Locations</b></td>
+                </tr>
+            </tfoot>
         </table>
 
         <hr>
 
         <h2>Newsletter Subscription</h2>
         <p>Sign up to receive updates directly in your inbox:</p>
-        
+
         <form action="#" method="POST">
             <div class="form-group">
                 <label for="name">Full Name:</label><br>
@@ -219,7 +275,8 @@
             <br>
             <div class="form-group">
                 <label for="message">Comments or Preferences:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" placeholder="Let us know what topics interest you..."></textarea>
+                <textarea id="message" name="message" rows="4" cols="50"
+                    placeholder="Let us know what topics interest you..."></textarea>
             </div>
             <br>
             <button type="submit">Submit Form</button>
@@ -228,4 +285,5 @@
     </div>
 
 </body>
+
 </html>
